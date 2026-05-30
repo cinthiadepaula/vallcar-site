@@ -25,7 +25,7 @@ export default function Contato() {
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const whatsapp = "5511968297720";
+    const whatsapp = "5545999930737";
 
     const texto = `
 Olá, vim pelo site da VallCar.

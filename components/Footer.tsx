@@ -28,7 +28,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://wa.me/5545999999999"
+            href="https://wa.me/5545999930737"
             target="_blank"
             className="bg-zinc-900 hover:bg-green-500 p-3 rounded-full transition"
           >
