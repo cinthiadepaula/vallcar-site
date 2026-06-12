@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-zinc-800 text-white">
+    <footer className="bg-[#001677] border-t border-zinc-800 text-white">
       <div className="max-w-7xl mx-auto px-6 py-10 text-center">
         <h3 className="font-bold text-xl">VallCar Auto Vidros</h3>
 

@@ -42,7 +42,7 @@ Mensagem: ${form.mensagem}
   }
 
   return (
-    <main className="bg-black text-white">
+    <main className="bg-[#001f8a] text-white min-h-screen">
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
           <div>
@@ -57,17 +57,35 @@ Mensagem: ${form.mensagem}
               WhatsApp.
             </p>
 
-            <div className="mt-8 space-y-4 text-gray-300">
+            <div className="mt-8 space-y-4 text-blue-100">
               <p>📞 Atendimento rápido pelo WhatsApp</p>
               <p>📍 10 unidades para melhor atender você</p>
               <p>⏰ Segunda a sexta, 08h às 18h</p>
             </div>
 
+            <div className="mt-10 bg-[#00145f] border border-blue-400/20 rounded-xl p-5">
+              <h3 className="font-bold text-blue-200 mb-3">
+                Atendimento rápido
+              </h3>
+
+              <p className="text-blue-100">
+                Precisa de ajuda imediata? Fale com nossa equipe pelo WhatsApp e
+                receba atendimento especializado.
+              </p>
+            </div>
             <div className="flex gap-4 mt-8">
               <a
                 href="https://www.instagram.com/autovidrosvallcar/"
                 target="_blank"
-                className="bg-zinc-950 border border-zinc-800 hover:border-red-600 p-4 rounded-full transition"
+                className="
+bg-[#00145f]
+border
+border-blue-400/20
+hover:border-blue-300
+p-4
+rounded-full
+transition
+"
               >
                 <FaInstagram size={24} />
               </a>
@@ -75,7 +93,15 @@ Mensagem: ${form.mensagem}
               <a
                 href="https://www.facebook.com/Vallcar"
                 target="_blank"
-                className="bg-zinc-950 border border-zinc-800 hover:border-blue-600 p-4 rounded-full transition"
+                className="
+bg-[#00145f]
+border
+border-blue-400/20
+hover:border-blue-300
+p-4
+rounded-full
+transition
+"
               >
                 <FaFacebookF size={24} />
               </a>
@@ -84,7 +110,15 @@ Mensagem: ${form.mensagem}
                 href="https://wa.me/5511968297720"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-zinc-950 border border-zinc-800 hover:border-green-500 p-4 rounded-full transition"
+                className="
+bg-[#00145f]
+border
+border-blue-400/20
+hover:border-blue-300
+p-4
+rounded-full
+transition
+"
               >
                 <FaWhatsapp size={24} />
               </a>
@@ -93,7 +127,16 @@ Mensagem: ${form.mensagem}
 
           <form
             onSubmit={handleSubmit}
-            className="bg-zinc-950 border border-zinc-800 rounded-2xl p-8 space-y-5"
+            className="
+bg-[#00145f]
+border
+border-blue-400/20
+rounded-2xl
+p-8
+space-y-5
+shadow-xl
+shadow-black/20
+"
           >
             <input
               name="nome"
@@ -102,7 +145,18 @@ Mensagem: ${form.mensagem}
               value={form.nome}
               onChange={handleChange}
               required
-              className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 outline-none focus:border-red-600"
+              className="
+w-full
+bg-[#000f4d]
+border
+border-blue-500/20
+rounded-lg
+px-4
+py-3
+outline-none
+focus:border-blue-300
+transition
+"
             />
 
             <input
@@ -112,7 +166,18 @@ Mensagem: ${form.mensagem}
               value={form.telefone}
               onChange={handleChange}
               required
-              className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 outline-none focus:border-red-600"
+              className="
+w-full
+bg-[#000f4d]
+border
+border-blue-500/20
+rounded-lg
+px-4
+py-3
+outline-none
+focus:border-blue-300
+transition
+"
             />
 
             <select
@@ -120,7 +185,18 @@ Mensagem: ${form.mensagem}
               value={form.servico}
               onChange={handleChange}
               required
-              className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 outline-none focus:border-red-600"
+              className="
+w-full
+bg-[#000f4d]
+border
+border-blue-500/20
+rounded-lg
+px-4
+py-3
+outline-none
+focus:border-blue-300
+transition
+"
             >
               <option value="">Selecione o serviço</option>
               <option value="Troca de para-brisa">Troca de para-brisa</option>
@@ -136,7 +212,18 @@ Mensagem: ${form.mensagem}
               rows={5}
               value={form.mensagem}
               onChange={handleChange}
-              className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 outline-none focus:border-red-600"
+              className="
+w-full
+bg-[#000f4d]
+border
+border-blue-500/20
+rounded-lg
+px-4
+py-3
+outline-none
+focus:border-blue-300
+transition
+"
             />
 
             <button

@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
+  --vallcar-blue: #001677;
+  --vallcar-blue-light: #0030cc;
+  --vallcar-blue-dark: #000f4d;
 }
 
 body {
-  background: #000;
+  background: #0014c5;
   color: white;
 }

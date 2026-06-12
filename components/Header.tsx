@@ -17,9 +17,20 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-black/90 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+    <header
+      className="
+      sticky
+      top-0
+      z-50
+     bg-[#001677]/95
+      backdrop-blur-md
+      border-b
+     border-blue-400/20
+      "
+    >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/">
+        {/* Logo */}
+        <Link href="/" className="hover:scale-105 transition duration-300">
           <Image
             src="/logo-vallcar.png"
             alt="VallCar Auto Vidros"
@@ -29,35 +40,64 @@ export default function Header() {
           />
         </Link>
 
+        {/* Menu Desktop */}
         <nav className="hidden md:flex gap-8 text-white font-semibold">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="hover:text-red-500 transition"
+              className="
+              hover:text-blue-400
+              transition
+              duration-300
+              "
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
+        {/* Botão Mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white"
+          className="
+          md:hidden
+          text-white
+          hover:text-blue-400
+          transition
+          "
           aria-label="Abrir menu"
         >
           {isOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
       </div>
 
+      {/* Menu Mobile */}
       {isOpen && (
-        <nav className="md:hidden bg-black border-t border-zinc-800 px-6 py-6 flex flex-col gap-5 text-white font-semibold">
+        <nav
+          className="
+          md:hidden
+          bg-[#020617]
+          border-t
+          border-blue-900/30
+          px-6
+          py-6
+          flex
+          flex-col
+          gap-5
+          text-white
+          font-semibold
+          "
+        >
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="hover:text-red-500 transition"
+              className="
+              hover:text-blue-400
+              transition
+              "
             >
               {link.label}
             </Link>

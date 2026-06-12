@@ -1,30 +1,88 @@
 export default function Numbers() {
   return (
-    <section className="py-24 bg-zinc-950">
+    <section className="py-24 bg-[#000f4d]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div className="text-center">
-            <h3 className="text-5xl font-bold text-red-500">10+</h3>
+        <div className="text-center mb-16">
+          <span className="text-blue-200 uppercase tracking-widest font-semibold">
+            Nossa história em números
+          </span>
 
-            <p className="mt-3 text-gray-400">Anos de experiência</p>
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mt-4">
+            Resultados que demonstram nossa experiência
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            className="
+            bg-[#00145f]
+            border
+            border-blue-400/20
+            rounded-2xl
+            p-8
+            text-center
+            hover:-translate-y-2
+            transition-all
+            duration-300
+            "
+          >
+            <h3 className="text-5xl font-bold text-blue-200">10+</h3>
+
+            <p className="mt-4 text-blue-100">Anos de experiência</p>
           </div>
 
-          <div className="text-center">
-            <h3 className="text-5xl font-bold text-red-500">5.000+</h3>
+          <div
+            className="
+            bg-[#00145f]
+            border
+            border-blue-400/20
+            rounded-2xl
+            p-8
+            text-center
+            hover:-translate-y-2
+            transition-all
+            duration-300
+            "
+          >
+            <h3 className="text-5xl font-bold text-blue-200">5.000+</h3>
 
-            <p className="mt-3 text-gray-400">Clientes atendidos</p>
+            <p className="mt-4 text-blue-100">Clientes atendidos</p>
           </div>
 
-          <div className="text-center">
-            <h3 className="text-5xl font-bold text-red-500">100%</h3>
+          <div
+            className="
+            bg-[#00145f]
+            border
+            border-blue-400/20
+            rounded-2xl
+            p-8
+            text-center
+            hover:-translate-y-2
+            transition-all
+            duration-300
+            "
+          >
+            <h3 className="text-5xl font-bold text-blue-200">100%</h3>
 
-            <p className="mt-3 text-gray-400">Garantia</p>
+            <p className="mt-4 text-blue-100">Garantia nos serviços</p>
           </div>
 
-          <div className="text-center">
-            <h3 className="text-5xl font-bold text-red-500">10</h3>
+          <div
+            className="
+            bg-[#00145f]
+            border
+            border-blue-400/20
+            rounded-2xl
+            p-8
+            text-center
+            hover:-translate-y-2
+            transition-all
+            duration-300
+            "
+          >
+            <h3 className="text-5xl font-bold text-blue-200">10</h3>
 
-            <p className="mt-3 text-gray-400">Unidades</p>
+            <p className="mt-4 text-blue-100">Unidades</p>
           </div>
         </div>
       </div>
